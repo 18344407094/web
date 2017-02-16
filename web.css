@@ -1,0 +1,10 @@
+*{margin:0px; padding:0px;}
+.top{height:100%; width:100%; background-color:black;filter:alpha(Opacity=80);-moz-opacity:0.5;opacity: 0.5;}
+.tit{margin-left: 150px;}
+.bgp{margin-top: 0px; height:100%; width:100%;}
+.color{color:#3399cc; text-decoration:none;font-weight:bold;}
+.color:visited{color:#f9f7f7; text-decoration:none;font-weight:bold;}
+.color:hover{color:#CF0000; text-decoration:underline;font-weight:bold;}
+.tab{ margin-left: 20px; display: inline-block;line-height: 38px; text-color: #000;}
+.box{height:230px;width: 900px;margin:432px auto; text-align: center; background-color:rgba(230,244,500,8);border-radius: 8px 8px 0px 0px;filter:alpha(Opacity=98);-moz-opacity:0.5;opacity: 0.5;}
+.text{text-decoration:none;font-weight:bold;font-size:25px;font-weight:900px;}
