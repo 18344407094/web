@@ -5,6 +5,10 @@
 .color{color:#3399cc; text-decoration:none;font-weight:bold;}
 .color:visited{color:#f9f7f7; text-decoration:none;font-weight:bold;}
 .color:hover{color:#CF0000; text-decoration:underline;font-weight:bold;}
-.tab{ margin-left: 20px; display: inline-block;line-height: 38px; text-color: #000;}
-.box{height:230px;width: 900px;margin:432px auto; text-align: center; background-color:rgba(230,244,500,8);border-radius: 8px 8px 0px 0px;filter:alpha(Opacity=98);-moz-opacity:0.5;opacity: 0.5;}
-.text{text-decoration:none;font-weight:bold;font-size:25px;font-weight:900px;}
+.tab{ margin-left: 30px; display: inline-block;line-height: 38px; text-color: #000;}
+.welcome{padding-top: 200px; text-align:center;font-size: 100px;text-decoration: none;}
+.box{height:230px;width: 900px;margin:120px auto; text-align: center; background-color:rgba(230,244,500,8);border-radius: 8px 8px 8px 8px;filter:alpha(Opacity=98);-moz-opacity:0.5;opacity: 0.5;}
+.text{text-decoration:none;font-weight:bold;font-size:20px;font-weight:900px;font-family: PingFang TC,Avenir Next,Helvetica,Arial,Hiragino Sans GB,Microsoft YaHei,sans-serif;}
+.wcolor{text-decoration:none;color: #f9f7f7;}
+.span{color: #f9f7f7;font-weight: bolder;font-size: 65px;}
+.h2{padding-top:150px;}
