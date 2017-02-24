@@ -37,10 +37,7 @@
 .readmore{height: 20px;width: 87%;background-color:#97dffd; margin-top: 50px;margin-left: 100px; text-align: center;border-radius: 5px ;}
 .readmore:hover{background-color:blue;}
 .readmorea{color: #f9f7f7;}
-.aboutme{
-	position: fixed;
-    z-index: -2;
-	height:auto;width: auto;background-color:rgba(235,235,235,1);}
+
 .right{height: auto;width: auto; float: left; margin-left: 5%; }
 .right1{height: 350px;width: auto;background-color:#f9f7f7;margin: 0 auto;border-radius: 5px;}
 .right1:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);}
@@ -93,4 +90,15 @@
 .header{height:auto;width:100%;
 	background-repeat:no-repeat;
 	background-image: url(./picture/yuruyuri-012.jpg); 
+	background-size: cover;
+}
+.aboutme{
+	position: fixed;
+    z-index: -2;
+    width: 100%;
+	height:100%;
+	background-color:rgba(235,235,235,1);}
+.aboutme img{
+	background-size: cover;
+	width: 100%;
 }
