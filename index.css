@@ -9,6 +9,7 @@
 .topbox{position: absolute; margin-top:10%; margin-left: 35%;float:left;z-index:2}
 .box{position: relative; z-index:1;height:230px;width:65%;margin:10% 17%; text-align: center; background-color:rgba(230,244,500,8);border-radius: 8px;opacity: 0.5;}
 .img{height: 10%;width: 10%;border-radius: 100%;margin-top: 5%;margin-left: 20%}
+.img:hover{transform: scale(1.1,1.1);}
 .talk{text-align: center;text-decoration:none;font-weight:bold;font-size:20px;font-weight:900px;margin-left: 10%;}
 .wcolor{text-decoration:none;color: #f9f7f7;}
 .span{text-align: center;color: #f9f7f7;font-weight: bolder;font-size: 65px;}
@@ -37,10 +38,9 @@
 .readmore{height: 20px;width: 87%;background-color:#97dffd; margin-top: 50px;margin-left: 100px; text-align: center;border-radius: 5px ;}
 .readmore:hover{background-color:blue;}
 .readmorea{color: #f9f7f7;}
-
-.right{height: auto;width: auto; float: left; margin-left: 5%; }
-.right1{height: 350px;width: auto;background-color:#f9f7f7;margin: 0 auto;border-radius: 5px;}
-.right1:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);}
+.right{height: 1500px;width:26%; float: left; margin-left: 5%; }
+.right1{height: 25%;width:100%;background-color:#f9f7f7;margin: 0 auto;border-radius: 5px;}
+.right1:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);transform: translate3d(0,-2px,0);transition: all .2s linear;}
 .right1img{ height:200px;width: auto;margin:15px;}
 .catchme{text-align: center;font-weight:700; font-size:18px;margin-top: -10px;}
 .ra{margin-top:auto;}
@@ -67,30 +67,29 @@
 .rb4:hover{background-color: #CF0000; }
 .d{color: #f9f7f7; display: block; padding:7px;font-weight: 550;font-size: 20px;}
 .music{height: 150px;width: auto;margin-top: 35px; background-color:#f9f7f7;border-radius: 5px ;}
-.music:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);}
+.music:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);transform: translate3d(0,-2px,0);transition: all .2s linear;}
 .musicimg{height: 80px;width: 90px;margin: 15px 15px 0px 15px ;}
 .mp3{margin-left: 15px;}
-.mp3:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);}
 .sub{height: 150px; width: auto;background-color:#f9f7f7;border-radius: 5px ;margin-top:35px;}
-.sub:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);}
+.sub:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);transform: translate3d(0,-2px,0);transition: all .2s linear;}
 .sub1:hover{background-color:rgba(255,235,226,1);}
 .sub1{position: absolute; height: 130px;width: 330px;margin:10px;background-color:#f9f7f7;}
 .subp{text-align: center;font-weight: 700;font-size: 25px;padding-top:25px;color:#e51c23;}
 .subp1{text-align: center;margin:150px; font-weight: 700;font-size: 25px;padding-top:20px;color:#e51c23;}
 .chat{height: auto;width: 350px;background-color:#f9f7f7; margin-top: 35px;padding-top:20px;padding-bottom: 20px; border-radius: 5px ;}
-.chat:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);}
+.chat:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);transform: translate3d(0,-2px,0);transition: all .2s linear;}
 .chat1{height: auto;width: 310px; margin-top: 20px;margin-left: 20px;border-bottom: 1px solid #ddd;padding-bottom: 10px;border-radius: 5px ;}
-.chat1:hover{background-color:rgba(130,241,253,0.08);}
+.chat1:hover{background-color:rgba(130,241,253,0.08);transform: translate3d(0,-2px,0);transition: all .2s linear;}
 .chat1img{height:40px;width: auto; border-radius:100%;background-color:rgba(241,255,241,1);float: left;margin-right: 10px;}
 .chatlabel{height:25px;width: 110px;margin-top: 20px;margin-left: -10px;padding-top:8px; background-color:#97dffd;border-radius: 0px 5px 5px 0px;box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);}
 .chatlabel:after{position:relative;content: "";top:-12px;border-top:0 solid transparent;border-right-width: 0.8em;border-right-color: inherit;border-right-style: solid;border-bottom: 1em solid transparent;border-left: 0 solid transparent;z-index: -1;}
 .close{height: 50px;width: auto;background-color:#f9f7f7;margin-top: 35px;border-radius: 5px ;text-align: center;}
-.close:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);}
+.close:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);transform: translate3d(0,-2px,0);transition: all .2s linear;}
 .closep{display: block; padding-top:15px;}
 .header{height:auto;width:100%;
 	background-repeat:no-repeat;
 	background-image: url(./picture/yuruyuri-012.jpg); 
-	background-size: cover;
+	background-size: 100%;
 }
 .aboutme{
 	position: fixed;
