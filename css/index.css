@@ -4,12 +4,12 @@
 	font-family:'微软雅黑','Times New Roman', Times, serif;
 }
 .navi_head{
-	height:30px;
+	height:30px;width: 100%;
 	background-color:black;
 }
 .navi_body{
 	overflow:hidden;
-	height:30px;
+	height:30px;width: 100%;
 	background:black;
 	transition:height ease 0.5s;
 }
@@ -51,18 +51,18 @@
 	.color:visited{color:#f9f7f7;font-weight:bold;}
 	.color:hover{color:#CF0000;font-weight:bold;}
 	.tab{ margin-left: 3%; display: inline-block;line-height: 38px; text-color: #000;}
-	.welcome{padding-top: 15%; text-align:center;font-size: 100px;}
+	.welcome{padding-top: 15%; text-align:center;}
 	.topbox{position: absolute; margin-top:10%; margin-left: 35%;float:left;z-index:2}
-	.box{position: relative; z-index:1;height:230px;width:65%;margin:10% 17%; text-align: center; background-color:rgba(230,244,500,8);border-radius: 8px;opacity: 0.5;}
-	.img{height: 10%;width: 10%;border-radius: 100%;margin-top: 5%;margin-left: 20%}
+	.box{position: relative; z-index:1;height:230px;width:65%;margin:18% 17%; text-align: center; background-color:rgba(230,244,500,8);border-radius: 8px;opacity: 0.5;}
+	.img{height: 10%;width: 10%;border-radius: 100%;margin-top: 20%;margin-left: 20%}
 	.img:hover{transform: scale(1.1,1.1);}
 	.talk{text-align: center;text-decoration:none;font-weight:bold;font-size:20px;font-weight:900px;margin-left: 10%;}
 	.wcolor{text-decoration:none;color: #f9f7f7;}
 	.span{text-align: center;color: #f9f7f7;font-weight: bolder;font-size: 65px;}
 	.h2{padding-top:5%;}
 	.main{height: 3000px;width: 100%}
-	.text{float: left;height:auto;width: 60%;}
-	.text1{padding-bottom:2%; margin-left:12%; height:auto;width:88%;text-align:center;background-color:#f9f7f7;border-radius: 5px 5px 5px 5px;}
+	.text{float: left;height:auto;width: 60%;margin-left:10%;}
+	.text1{padding-bottom:2%; height:auto;width:88%;text-align:center;background-color:#f9f7f7;border-radius: 5px 5px 5px 5px;}
 	.text1img{margin-top: 50px;height: auto;width:80%;}
 	.round{box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12); height: 70px; width: 70px;background-color:#97dffd;border-radius: 100%;text-align:center;margin-top: -2%;margin-left:-2%;position: absolute;}
 	.month{color:#f9f7f7;display: block;margin-top:15%;font-weight:bolder;}
@@ -74,20 +74,20 @@
 	.labela{color: #f9f7f7;font-weight:bolder;}
 	.bottom{height: 20px;width: 11%;background-color:#97dffd;margin-top:5%; margin-left:45%; border-radius: 5px 5px 5px 5px;}
 	.more{color: #f9f7f7;font-size:13px;font-weight:700;}
-	.text2{padding-bottom:2%; margin-left:12%; margin-top:150px;  height:auto;width:88%;text-align:center;background-color:#f9f7f7;border-radius: 5px 5px 5px 5px;}
+	.text2{padding-bottom:2%;margin-top:150px;  height:auto;width:88%;text-align:center;background-color:#f9f7f7;border-radius: 5px 5px 5px 5px;}
 	.text2img{margin-top: 50px;height: 350px;width:80%;}
 	.text2p{margin-top: 2%;text-align: left;width: 96%;margin-left: 2.5%;}
-	.text3{padding-bottom: 20px; margin-top:150px;margin-left:100px;height: auto;width: auto;text-align:center;background-color:#f9f7f7;border-radius: 5px 5px 5px 5px;}
+	.text3{padding-bottom: 20px; margin-top:150px;height: auto;width:88%;text-align:center;background-color:#f9f7f7;border-radius: 5px 5px 5px 5px;}
 	.movie{height: 390px;width: 100%}
 	.movie1{height: 390px;width: 95%;}
 	.moviep{margin-top: 2%;text-align: left;width: 99%;margin-left: 2.5%;}
-	.readmore{height: 20px;width: 87%;background-color:#97dffd; margin-top: 50px;margin-left: 100px; text-align: center;border-radius: 5px ;}
+	.readmore{height: 20px;width: 88%; margin-top: 50px; background-color:#97dffd;  text-align: center;border-radius: 5px ;}
 	.readmore:hover{background-color:blue;}
 	.readmorea{color: #f9f7f7;}
-	.right{height: 1500px;width:26%; float: left; margin-left: 5%; }
+	.right{height: 1500px;width:26%; float: left; }
 	.right1{height: 25%;width:100%;background-color:#f9f7f7;margin: 0 auto;border-radius: 5px;}
 	.right1:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);transform: translate3d(0,-2px,0);transition: all .2s linear;}
-	.right1img{ height:200px;width: auto;margin:15px;}
+	.right1img{ height:55%;width:92%;margin:15px;}
 	.catchme{text-align: center;font-weight:700; font-size:18px;margin-top: -10px;}
 	.ra{margin-top:auto;}
 	.ra1{height: 35px;width: 35px;background-color: rgba(250,0,0,0.3);border-radius:100%;text-align: center;float: left; margin-left: 100px;}
@@ -132,9 +132,9 @@
 	.close{height: 50px;width: auto;background-color:#f9f7f7;margin-top: 35px;border-radius: 5px ;text-align: center;}
 	.close:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);transform: translate3d(0,-2px,0);transition: all .2s linear;}
 	.closep{display: block; padding-top:15px;}
-	.header{height:auto;width:100%;
+	.header{height:100%;width:100%;
 		background-repeat:no-repeat;
-		background-image: url(./picture/yuruyuri-012.jpg); 
+		background-image: url(../picture/yuruyuri-012.jpg); 
 		background-size: 100%;
 	}
 	.aboutme{

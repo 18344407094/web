@@ -1,0 +1,25 @@
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.container-fluid{height: 20px;width:auto;}
+.col-lg-6{height: auto;width: auto;}
+#output-wrap{margin:10px auto;  height: 20px;width: 800px;}
+#source{font-weight: 700;font-size: 50px;visibility: hidden;}
+#output{font-weight: 500;font-size: 90px;color: #fff;}
+.typing-cursor, .typing-cursor-black, .typing-cursor-white {
+  opacity: 1;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 70px;
+  -webkit-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+  color: #fff;
+}
