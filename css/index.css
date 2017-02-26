@@ -1,5 +1,5 @@
 *{margin:0px; padding:0px;text-decoration: none;font-family:  PingFang TC,Avenir Next,Helvetica,Arial,Hiragino Sans GB,Microsoft YaHei,sans-serif;}
-.top{height:100%; width:100%;position: absolute;opacity: 0.7;
+.top{width:100%;position: absolute;opacity: 0.7;
 	margin:0;
 	font-family:'微软雅黑','Times New Roman', Times, serif;
 }
@@ -52,9 +52,9 @@
 	.color:hover{color:#CF0000;font-weight:bold;}
 	.tab{ margin-left: 3%; display: inline-block;line-height: 38px; text-color: #000;}
 	.welcome{padding-top: 15%; text-align:center;}
-	.topbox{position: absolute; margin-top:10%; margin-left: 35%;float:left;z-index:2}
-	.box{position: relative; z-index:1;height:230px;width:65%;margin:18% 17%; text-align: center; background-color:rgba(230,244,500,8);border-radius: 8px;opacity: 0.5;}
-	.img{height: 10%;width: 10%;border-radius: 100%;margin-top: 20%;margin-left: 20%}
+	.topbox{padding-top: 5%;}
+	.box{height:230px;width:65%;margin:18% 17%; text-align: center; background-color:rgba(230,244,500,0.5);border-radius: 8px;}
+	.img{width: 10%;border-radius: 100%;}
 	.img:hover{transform: scale(1.1,1.1);}
 	.talk{text-align: center;text-decoration:none;font-weight:bold;font-size:20px;font-weight:900px;margin-left: 10%;}
 	.wcolor{text-decoration:none;color: #f9f7f7;}
