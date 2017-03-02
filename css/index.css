@@ -60,7 +60,7 @@
 	.wcolor{text-decoration:none;color: #f9f7f7;}
 	.span{text-align: center;color: #f9f7f7;font-weight: bolder;font-size: 65px;}
 	.h2{padding-top:5%;}
-	.main{height: 3000px;width: 100%}
+	.main{height: 2800px;width: 100%}
 	.text{float: left;height:auto;width: 60%;margin-left:10%;}
 	.text1{padding-bottom:2%; height:auto;width:88%;text-align:center;background-color:#f9f7f7;border-radius: 5px 5px 5px 5px;}
 	.text1img{margin-top: 50px;height: auto;width:80%;}
@@ -132,11 +132,20 @@
 	.close{height: 50px;width: auto;background-color:#f9f7f7;margin-top: 35px;border-radius: 5px ;text-align: center;}
 	.close:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);transform: translate3d(0,-2px,0);transition: all .2s linear;}
 	.closep{display: block; padding-top:15px;}
-	.header{height:100%;width:100%;
+	.blackbox{height: 110px;width: 100%;background-color:#f9f7f7;}
+	.blackboximg{float: left;}
+	.blackboximg2{float: right;}
+	.center{height: 110px;width: 250px;background-color:red;margin: 0 auto;}
+	.blackbox:hover > .blackboximg{transform: translate3d(500px,0px,0);transition: all .8s linear;}
+	.blackbox:hover > .blackboximg2{transform: translate3d(-500px,0px,0);transition: all .8s linear;}
+	.qq2d{height: 60px;width: 60px;border-radius: 100%;float: left;}
+	.qq2dcore{height: 100px;width: 100px;margin-top: 105px;}
+	.qq2d:hover > .qq2dcore{transform: translate3d(0,100px,0);transition: all .8s linear;}
+	.weichat2d{height: 60px;width: 60px;border-radius: 100%;float: right;}
+	.header{height:100%;width:100%; 
 		background-repeat:no-repeat;
 		background-image: url(../picture/yuruyuri-012.jpg); 
-		background-size: 100%;
-	}
+		background-size: 100%;}
 	.aboutme{
 		position: fixed;
 		z-index: -2;
