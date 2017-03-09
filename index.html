@@ -193,11 +193,13 @@
       </audio>
     </div>
   </div>
-  <div class="sub">
-    <div class="sub1" onClick="window.location.href='#'" style="cursor:hand ">
+  <div class="sub" onClick="window.location.href='#'" ;>
+    <div class="sub1">
+
       <p class="subp">喜欢就点赞吧！</p>
     </br>
     <a href="#" class="subp1">233</a>
+    <p class="heart">♥</p>
   </div>
 </div>
 <div class="chat">
@@ -226,6 +228,39 @@
 </div>
 </div>
 </div>
+<div id ="gps" onclick="goTopEx()" style="display: none;">
+  <script type="text/javascript"> 
+    function goTopEx() { 
+      var obj = document.getElementById("gps"); 
+      function getScrollTop() { 
+        return document.documentElement.scrollTop + document.body.scrollTop; 
+      } 
+      function setScrollTop(value) { 
+        if (document.documentElement.scrollTop) { 
+          document.documentElement.scrollTop = value; 
+        } else { 
+          document.body.scrollTop = value; 
+        } 
+      } 
+      window.onscroll = function() { 
+        getScrollTop() > 800 ? obj.style.display = "": obj.style.display = "none"; 
+      } 
+      obj.onclick = function() { 
+        var goTop = setInterval(scrollMove, 10); 
+        function scrollMove() { 
+          setScrollTop(getScrollTop() / 1.1); 
+          if (getScrollTop() < 1) clearInterval(goTop); 
+        } 
+      } 
+    } 
+    goTopEx();
+  </script>
+  <div class="gps1">
+    <img src="./picture/go-top2.png"   
+    onMouseOver="this.src='./picture/go-top.png'"
+    onMouseOut="this.src='./picture/go-top2.png'">
+  </div>
+</div>
 <!-- <div class="qq2dcore">
   <img class="qq2dcore" src="./picture/qq2d.jpg">
 </div> -->
@@ -242,5 +277,4 @@
   </div>
 </div>
 </body>
-
 </html>
