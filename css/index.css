@@ -131,18 +131,18 @@
 	.chat1{height: auto;width: 90%;margin:3% auto;border-bottom: 1px solid #ddd;padding-bottom: 10px;border-radius: 5px ;}
 	.chat1:hover{background-color:rgba(130,241,253,0.08);transform: translate3d(0,-2px,0);transition: all .2s linear;}
 	.chat1img{height:40px;width: auto; border-radius:100%;background-color:rgba(241,255,241,1);float: left;margin-right: 10px;}
-	.chatlabel{height:25px;width: 110px;margin-top: 20px;margin-left: -10px;padding-top:8px; background-color:#97dffd;border-radius: 0px 5px 5px 0px;box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);}
-	.chatlabel:after{position:relative;content: "";top:-12px;border-top:0 solid transparent;border-right-width: 0.8em;border-right-color: inherit;border-right-style: solid;border-bottom: 1em solid transparent;border-left: 0 solid transparent;z-index: -1;}
+	.chatlabel{height:25px;width: 110px;margin-top: 20px;margin-left: -12px;padding-top:8px; background-color:#97dffd;border-radius: 0px 5px 5px 0px;box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);}
+	.chatlabel:after{position:relative;content: "";top:-50%;left:0%;border-top:0 solid transparent;border-right-width: 0.8em;border-right-color: inherit;border-right-style: solid;border-bottom: 1em solid transparent;border-left: 0 solid transparent;z-index: -1;}
 	.close{height: 50px;width: 100%;background-color:#f9f7f7;margin-top: 35px;border-radius: 5px ;text-align: center;}
 	.close:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);transform: translate3d(0,-2px,0);transition: all .2s linear;}
 	.closep{display: block; padding-top:15px;}
 	#gps{height:auto; width: auto;float: right;margin-right: 3%;border-radius: 5px;position: fixed;right: 0px;bottom: 150px;}
-	.blackbox{height: 110px;width: 100%;background-color:#f9f7f7;}
+	.blackbox{height: 110px;width: 100%;background-color:#f9f7f7;text-align: center;}
 	.blackboximg{float: left;}
+	.l{height: auto;width: 25%;background: red;margin-left: 5%; float: left;}
+	.center{height: auto;width: 25%;background: blue;margin-left: 5%;float: left;}
+	.r{height: auto;width: 25%;background-color:red;margin-left: 5%;float: left;}
 	.blackboximg2{float: right;}
-	.center{height: 110px;width: 250px;background-color:red;margin: 0 auto;}
-	.blackbox:hover > .blackboximg{transform: translate3d(500px,0px,0);transition: all .8s linear;}
-	.blackbox:hover > .blackboximg2{transform: translate3d(-500px,0px,0);transition: all .8s linear;}
 	.qq2d{height: 60px;width: 60px;border-radius: 100%;float: left;}
 	.qq2dcore{height: 100px;width: 100px;margin-top: 105px;}
 	.qq2d:hover > .qq2dcore{transform: translate3d(0,100px,0);transition: all .8s linear;}
