@@ -84,7 +84,7 @@
 	.readmore{height: 20px;width: 88%; margin-top: 50px; background-color:#97dffd;  text-align: center;border-radius: 5px ;}
 	.readmore:hover{background-color:blue;}
 	.readmorea{color: #f9f7f7;}
-	.right{height: 1500px;width:26%; float: left; margin-left:-5%}
+	#right{height: 1500px;width:26%; float: left; margin-left:-5%}
 	.right1{height: 25%;width:100%;background-color:#f9f7f7;margin: 0 auto;border-radius: 5px;}
 	.right1:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);transform: translate3d(0,-2px,0);transition: all .2s linear;}
 	.right1img{ height:55%;width:92%;margin:15px;}
@@ -116,16 +116,16 @@
 	.music:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);transform: translate3d(0,-2px,0);transition: all .2s linear;}
 	.musicimg{height: 80px;width: 90px;margin: 15px 15px 0px 15px ;}
 	.mp3{margin-left: 15px;width: 90%}
-	.sub{height: 10%; width: 100%;background-color:#f9f7f7;border-radius: 5px ;margin-top:35px;padding-top: 10px;}
+	.sub{height: 10%; width: 100%;background-color:#f9f7f7;border-radius: 5px ;margin-top:35px;padding-top: 10px;cursor: pointer;}
 	.sub:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);transform: translate3d(0,-2px,0);transition: all .2s linear;}
 	.sub1:hover{background-color:#e51c23;}
 	.sub1:hover > .subp{color:#f9f7f7;}
-	.sub1:hover > .subp1{color:#f9f7f7;}
+	.sub1:hover > #subp1{color:#f9f7f7;}
 	.sub1:hover > .heart{color:#f9f7f7;}
 	.sub1{position: relative; height: 90%;width:95%;background-color:#f9f7f7;margin: 3px auto;}
 	.subp{text-align: center;font-weight: 700;font-size: 25px;padding-top:25px;color:#e51c23;}
 	.heart{height: 50px;width: 50px;font-size: 45px; color:#e51c23;margin-left: 35%; margin-top: -13%; }
-	.subp1{text-align: center;margin:150px; font-weight: 700;font-size: 25px; color:#e51c23;}
+	#subp1{text-align: center; font-weight: 700;font-size: 25px; color:#e51c23;}
 	.chat{height: auto;width: 100%;background-color:#f9f7f7; margin-top: 10%;padding-top:20px;padding-bottom: 20px; border-radius: 5px ;}
 	.chat:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);transform: translate3d(0,-2px,0);transition: all .2s linear;}
 	.chat1{height: auto;width: 90%;margin:3% auto;border-bottom: 1px solid #ddd;padding-bottom: 10px;border-radius: 5px ;}
@@ -133,31 +133,33 @@
 	.chat1img{height:40px;width: auto; border-radius:100%;background-color:rgba(241,255,241,1);float: left;margin-right: 10px;}
 	.chatlabel{height:25px;width: 110px;margin-top: 20px;margin-left: -12px;padding-top:8px; background-color:#97dffd;border-radius: 0px 5px 5px 0px;box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);}
 	.chatlabel:after{position:relative;content: "";top:-50%;left:0%;border-top:0 solid transparent;border-right-width: 0.8em;border-right-color: inherit;border-right-style: solid;border-bottom: 1em solid transparent;border-left: 0 solid transparent;z-index: -1;}
-	.close{height: 50px;width: 100%;background-color:#f9f7f7;margin-top: 35px;border-radius: 5px ;text-align: center;}
+	.close{height: auto;width: 100%;background-color:#f9f7f7;margin-top: 35px;padding: 10px 0;border-radius: 5px ;text-align: center;cursor: pointer;}
 	.close:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);transform: translate3d(0,-2px,0);transition: all .2s linear;}
-	.closep{display: block; padding-top:15px;}
 	#gps{height:auto; width: auto;float: right;margin-right: 3%;border-radius: 5px;position: fixed;right: 0px;bottom: 150px;}
-	.blackbox{height: 110px;width: 100%;background-color:#f9f7f7;text-align: center;}
-	.blackboximg{float: left;}
-	.l{height: auto;width: 25%;background: red;margin-left: 5%; float: left;}
-	.center{height: auto;width: 25%;background: blue;margin-left: 5%;float: left;}
-	.r{height: auto;width: 25%;background-color:red;margin-left: 5%;float: left;}
-	.blackboximg2{float: right;}
-	.qq2d{height: 60px;width: 60px;border-radius: 100%;float: left;}
-	.qq2dcore{height: 100px;width: 100px;margin-top: 105px;}
-	.qq2d:hover > .qq2dcore{transform: translate3d(0,100px,0);transition: all .8s linear;}
-	.weichat2d{height: 60px;width: 60px;border-radius: 100%;float: right;}
+	.blackbox{height: 110px;width: 100%;background-color:#f9f7f7;padding-top: 30px;}
+	.l{height: 100px;width: 25%;margin-left: 15%; float: left;border-right: 1px solid rgba(200,200,200,1);}
+	.lp{margin-left:30px;padding-left: 20px;}
+	.center{height: 100px;width: 25%;float: left;margin-left:30px;border-right: 1px solid rgba(200,200,200,1);}
+	.r{height: 100px;width: 25%;float: left;}
+	.Q{height: 60px;width: 60px;border-radius: 100%;float: left;margin-left: 50px;}
+    .QQ2d{height: 100px;width: 100px;margin-top: -160px;margin-left: 15px; background-color: #f9f7f7;padding:10px;visibility: hidden;}
+	.qq2d{display: block; height: 100px;width: 100px;}
+	.qc:hover + .QQ2d{visibility: visible;}
+	.W{height: 60px;width: 60px;border-radius: 100%;float: left;margin-left: 50px;}
+	.W2d{height: 100px;width: 100px;margin-top: -120px;margin-left: 120px; background-color: #f9f7f7;padding:10px;visibility: hidden;}
+	.w2d{display: block; height: 100px;width: 100px;}
+	.wc:hover + .W2d{visibility: visible;}
 	.header{height:100%;width:100%; 
 		background-repeat:no-repeat;
 		background-image: url(../picture/yuruyuri-012.jpg); 
 		background-size: 100%;}
-	.aboutme{
-		position: fixed;
-		z-index: -2;
-		width: 100%;
-		height:100%;
-		background-color:rgba(235,235,235,1);}
-		.aboutme img{
-			background-size: cover;
+		.aboutme{
+			position: fixed;
+			z-index: -2;
 			width: 100%;
-		}
+			height:100%;
+			background-color:rgba(235,235,235,1);}
+			.aboutme img{
+				background-size: cover;
+				width: 100%;
+			}
