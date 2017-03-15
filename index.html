@@ -191,7 +191,7 @@
       <audio id="mp3" preload="preload" controls="controls" loop="loop" preload="auto" src="http://m8.music.126.net/20170223140542/c874be5415eec9a553e4f61c56c83e3a/ymusic/6c84/e5e2/1e04/246e4e9e795448258e31d11dbbce882a.mp3">
         你的浏览器不支持audio标签
       </audio>
-      <script type="text/javascript">
+    <!--   <script type="text/javascript">
       function play(){
     function getName(){ //获取浏览器名
         if(navigator.userAgent.indexOf("MSIE")>0) { return "MSIE";}
@@ -214,68 +214,95 @@
       
     }
      setInterval(fransform,20)
-        }
-    
-    var audioplayer = document.getElementById('mp3');
-    audioplayer.onplay =function(){
-      play()
     }
-    audioplayer.onpause =function(){
-      
-    }
-</script>
+    var 
+    window.onclick = function(){  
+                if( flag==1 ){  
+                    music.pause();  /*音乐关闭*/  
+                    flag = 0;  
+                    rallback.style.webkitAnimationPlayState = "paused";  //旋转动画暂停  
+                }else{  
+                    music.play();   /*音乐开启*/  
+                    flag = 1;  
+                    rallback.style.webkitAnimationPlayState = "running";  //旋转动画暂停  
+                }  
+            }
+    //  var audioplayer = document.getElementById('mp3');
+    // audioplayer.onplay =function(){
+    //   play()
+    // }
+        
+  </script> -->
+  <script type="text/javascript">
+    window.onload = function(){  
+      var musicimg = document.getElementById('musicimg');
+              musicimg.style.webkitAnimationPlayState = "paused";  //旋转动画暂停    
+              var mp3 = document.getElementById('mp3'); 
+            var flag = 1; //开启音乐  
+            musicimg.onclick = function(){  
+              if( flag==1 ){  
+                mp3.pause();  /*音乐关闭*/  
+                flag = 0;  
+                    musicimg.style.webkitAnimationPlayState = "paused";  //旋转动画暂停  
+                  }else{  
+                    mp3.play();   /*音乐开启*/  
+                    flag = 1;  
+                    musicimg.style.webkitAnimationPlayState = "running";  //旋转动画暂停  
+                  }  
+                }     
+              }         
+            </script>  
+          </div>
+        </div>
+        <div id="sub" onClick="subup()" ;> 
+          <div id="sub1">
+            <script type="text/javascript">
+              function subup(){
+               var x = document.getElementById("subp1").innerHTML;
+               var x = parseInt(x);
+               x = x + 1;
+               document.getElementById("subp1").innerHTML=x;
+             }
+           </script>
+           <p id="subp">喜欢就点赞吧！</p>
+         </br>
+         <p id="subp1">233</p>
+         <p id="heart">♥</p>
+       </div>
+     </div>
+     <div id="chat">
+      <div id="chatlabel">
+        <a href="#" id="labela">一起来聊天吧</a>
+      </div>
+      <div id="chat1">
+        <img src="./picture/qq.png" id="chat1img">
+        <p id="chat1a">QQ评论你说：</p>
+        <p>给你666</p>
+      </div>
+      <div id="chat1">
+        <img src="./picture/qq.png" id="chat1img">
+        <p id="chat1a">QQ评论你说：</p>
+        <p>学生党，爱玩游戏，这个手机，，还没用过联发科的手机， 问问吧友，400兆以内的游戏能玩不?例王者。。之前一部是华为荣耀6，麒麟920的cpu处理器感觉不错， 还有手机信号怎么样？可以用到两年吗?
+        </p>
+      </div>
+      <div id="chat1">
+        <img src="./picture/weichat.png" id="chat1img">
+        <p id="chat1a">微信评论你说：</p>
+        <p>魅蓝手机操作体验太差，自从更新之后非常不好。我也不知道怎么刷回低版本，懒得查了，一直没用。举个例子，现在版本，你打开贴吧某个帖子。临时想去打开qq发信息，要先退出帖子，再退出吧，回到app首页，再退出贴吧app，然后才能打开qq。而且你想再回到原来那帖子只能重新进。这什么狗屁？单核手机都没这么蠢吧？</p>
+      </div>
     </div>
+    <div id="close" onclick="display()">
+      关闭侧边栏
+    </div>
+    <script type="text/javascript">
+      function display(){
+        var rdis = document.getElementById("right");
+        rdis.style.display = "none";
+        document.getElementById("text").style.width="90%";
+        document.getElementById("main").style.height="3600px"
+      }
+    </script>
   </div>
-  <div id="sub" onClick="subup()" ;> 
-    <div id="sub1">
-<script type="text/javascript">
-    function subup(){
-     var x = document.getElementById("subp1").innerHTML;
-     var x = parseInt(x);
-     x = x + 1;
-     document.getElementById("subp1").innerHTML=x;
-    }
-  </script>
-      <p id="subp">喜欢就点赞吧！</p>
-    </br>
-    <p id="subp1">233</p>
-    <p id="heart">♥</p>
-  </div>
-</div>
-<div id="chat">
-  <div id="chatlabel">
-    <a href="#" id="labela">一起来聊天吧</a>
-  </div>
-  <div id="chat1">
-    <img src="./picture/qq.png" id="chat1img">
-    <p id="chat1a">QQ评论你说：</p>
-    <p>给你666</p>
-  </div>
-  <div id="chat1">
-    <img src="./picture/qq.png" id="chat1img">
-    <p id="chat1a">QQ评论你说：</p>
-    <p>学生党，爱玩游戏，这个手机，，还没用过联发科的手机， 问问吧友，400兆以内的游戏能玩不?例王者。。之前一部是华为荣耀6，麒麟920的cpu处理器感觉不错， 还有手机信号怎么样？可以用到两年吗?
-    </p>
-  </div>
-  <div id="chat1">
-    <img src="./picture/weichat.png" id="chat1img">
-    <p id="chat1a">微信评论你说：</p>
-    <p>魅蓝手机操作体验太差，自从更新之后非常不好。我也不知道怎么刷回低版本，懒得查了，一直没用。举个例子，现在版本，你打开贴吧某个帖子。临时想去打开qq发信息，要先退出帖子，再退出吧，回到app首页，再退出贴吧app，然后才能打开qq。而且你想再回到原来那帖子只能重新进。这什么狗屁？单核手机都没这么蠢吧？</p>
-  </div>
-</div>
-<div id="close" onclick="display()">
-  关闭侧边栏
-</div>
-<script type="text/javascript">
-  function display(){
-    var rdis = document.getElementById("right");
-   rdis.style.display = "none";
-   document.getElementById("text").style.width="90%";
-   // var tdis = document.getElementById("text");
-   //  tdis.style.width ="" : tdis.style.width = 80%;
-  }
-</script>
-</div>
 </div>
 <div id ="gps" onclick="goTopEx()" style="display: none;">
   <script type="text/javascript"> 
@@ -292,7 +319,8 @@
         } 
       } 
       window.onscroll = function() { 
-        getScrollTop() > 800 ? obj.style.display = "": obj.style.display = "none"; 
+        getScrollTop() > 800 ? 
+        obj.style.display = "": obj.style.display = "none"; 
       } 
       obj.onclick = function() { 
         var goTop = setInterval(scrollMove, 10); 
@@ -314,34 +342,34 @@
   <img id="qq2dcore" src="./picture/qq2d.jpg">
 </div> -->
 <div id="blackbox">
-<div id="l">
-<p>关于本站</p>
-</br>
+  <div id="l">
+    <p>关于本站</p>
+  </br>
   <a id="lp1" href="#">本站资源</a>
   <a id="lp" href="#">技术提供</a>
-    <a id="lp" href="#">帮助中心</a>
+  <a id="lp" href="#">帮助中心</a>
 </div>
-  <div id="center">
+<div id="center">
   <p>传送门</p>
-  </br>
-  <a href="#">w3c教程</a>
-  <a id="lp" href="#">GitHub</a>
-    <a id="lp" href="#">友情链接</a>
+</br>
+<a href="#">w3c教程</a>
+<a id="lp" href="#">GitHub</a>
+<a id="lp" href="#">友情链接</a>
 </div>
- <div id="r">
-    <div id="qc">
-      <img id="Q" src="./picture/qq.png">
-    </div>
-    <div id="QQ2d">
+<div id="r">
+  <div id="qc">
+    <img id="Q" src="./picture/qq.png">
+  </div>
+  <div id="QQ2d">
    <img id="qq2d" src="./picture/qq2d.jpg">
  </div>
-    <div id="wc">
-      <img id="W" src="./picture/weichat.png">
-    </div>
-      <div id="W2d">
-   <img id="w2d" src="./picture/weichat2d.jpg">
- </div>
-  </div>
+ <div id="wc">
+  <img id="W" src="./picture/weichat.png">
+</div>
+<div id="W2d">
+ <img id="w2d" src="./picture/weichat2d.jpg">
+</div>
+</div>
 </div>
 </body>
 </html>

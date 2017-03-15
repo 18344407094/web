@@ -57,7 +57,7 @@
 	#wcolor{text-decoration:none;color: #f9f7f7;}
 	#span{text-align: center;color: #f9f7f7;font-weight: bolder;font-size: 65px;}
 	#h2{padding-top:5%;}
-	#main{height: 2800px;width: 100%}
+	#main{height: 2800px; width: 100%}
 	#text{float: left;height:auto;width: 60%;margin-left:10%;}
 	#text1{padding-bottom:2%; height:auto;width:88%;text-align:center;background-color:#f9f7f7;border-radius: 5px 5px 5px 5px;}
 	#text1img{margin-top: 50px;height: auto;width:80%;}
@@ -65,8 +65,8 @@
 	#month{color:#f9f7f7;display: block;margin-top:15%;font-weight:bolder;}
 	#day{color:#f9f7f7;display: block;margin-top:-25%; font-weight:700;font-size:30px;}
 	#text1a{color:#444;font-size: 25px;font-weight: 700;line-height: 80px;}
-	#text1p{margin-top: 2%;text-align: left;width: 99%;margin-left: 2.5%;}
-	#label{height:25px;width: 11.2%;margin-top:10%;margin-left: -2%;padding-top:1%; background-color:#97dffd;border-radius: 0px 5px 5px 0px;box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);}
+	#text1p{margin-top: 2%;text-align: left;width: 95%;margin-left:3%;}
+	#label{height:25px;width: 11.2%;min-width: 80px;max-width:85px;  margin-top:10%;margin-left: -2%;padding-top:1%; background-color:#97dffd;border-radius: 0px 5px 5px 0px;box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);}
 	#label:after{position:relative;content: "";top:-50%;left:-41%;border-top:0 solid transparent;border-right-width: 0.8em;border-right-color: inherit;border-right-style: solid;border-bottom: 1em solid transparent;border-left: 0 solid transparent;z-index: -1;}
 	#labela{color: #f9f7f7;font-weight:bolder;}
 	#bottom{height: 20px;width: 11%;background-color:#97dffd;margin-top:5%; margin-left:45%; border-radius: 5px 5px 5px 5px;}
@@ -111,8 +111,32 @@
 	#d{color: #f9f7f7; display: block; padding:7px;font-weight: 550;font-size: 20px;}
 	#music{height: 10%;width: 100%;margin-top: 35px; background-color:#f9f7f7;border-radius: 5px ;}
 	#music:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);transform: translate3d(0,-2px,0);transition: all .2s linear;}
-	#musicimg{height: 90px;width: 90px;margin: 15px 15px 0px 15px ; border-radius: 100%;}
+	/*#musicimg{height: 90px;width: 90px;margin: 15px 15px 0px 15px ; border-radius: 100%;}*/
 	#mp3{margin-left: 15px;width: 90%}
+	#musicimg{height: 90px;width: 90px;margin: 15px 15px 0px 15px ; border-radius: 100%;
+		/*css3动画无限制的旋转*/  
+		-webkit-animation: music_disc 4s linear infinite;  
+		animation: music_disc 4s linear infinite;  
+		/*-webkit-animation-direction:alternate;*/   /*//平滑的过渡---反方向运动*/  
+	}  
+	
+	/*css3动画的旋转*/  
+	@-webkit-keyframes music_disc {  
+		0% {  
+			-webkit-transform: rotate(0deg);  
+			-ms-transform: rotate(0deg);  
+			-o-transform: rotate(0deg);  
+			transform: rotate(0deg);  
+			
+		}  
+		100% {  
+			-webkit-transform: rotate(360deg);  
+			-ms-transform: rotate(360deg);  
+			-o-transform: rotate(360deg);  
+			transform: rotate(360deg);  
+			
+		}  
+	}  
 	#sub{height: 10%; width: 100%;background-color:#f9f7f7;border-radius: 5px ;margin-top:35px;padding-top: 10px;cursor: pointer;}
 	#sub:hover{box-shadow: 0 15px 30px rgba(0,0,0,.1);transform: translate3d(0,-2px,0);transition: all .2s linear;}
 	#sub1:hover{background-color:#e51c23;}
@@ -139,13 +163,13 @@
 	#center{height: 100px;width: 25%;float: left;margin-left:30px;border-right: 1px solid rgba(200,200,200,1);}
 	#r{height: 100px;width: 25%;float: left;}
 	#Q{height: 60px;width: 60px;border-radius: 100%;float: left;margin-left: 50px;}
-    #QQ2d{height: 100px;width: 100px;margin-top: -160px;margin-left: 15px; background-color: #f9f7f7;padding:10px;visibility: hidden;}
+	#QQ2d{height: 100px;width: 100px;margin-top: -160px;margin-left: 15px; background-color: #f9f7f7;padding:10px;visibility: hidden;}
 	#qq2d{display: block; height: 100px;width: 100px;}
-	#qc:hover + .QQ2d{visibility: visible;}
+	#qc:hover + #QQ2d{visibility: visible;}
 	#W{height: 60px;width: 60px;border-radius: 100%;float: left;margin-left: 50px;}
 	#W2d{height: 100px;width: 100px;margin-top: -120px;margin-left: 120px; background-color: #f9f7f7;padding:10px;visibility: hidden;}
 	#w2d{display: block; height: 100px;width: 100px;}
-	#wc:hover + .W2d{visibility: visible;}
+	#wc:hover + #W2d{visibility: visible;}
 	#header{height:100%;width:100%; 
 		background-repeat:no-repeat;
 		background-image: url(../picture/yuruyuri-012.jpg); 
