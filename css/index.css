@@ -66,7 +66,7 @@
 	#day{color:#f9f7f7;display: block;margin-top:-25%; font-weight:700;font-size:30px;}
 	#text1a{color:#444;font-size: 25px;font-weight: 700;line-height: 80px;}
 	#text1p{margin-top: 2%;text-align: left;width: 95%;margin-left:3%;}
-	#label{height:25px;width: 11.2%;min-width: 80px;max-width:85px;  margin-top:10%;margin-left: -2%;padding-top:1%; background-color:#97dffd;border-radius: 0px 5px 5px 0px;box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);}
+	#label{height:25px;width: 11%;min-width: 75px;max-width:80px;  margin-top:10%;margin-left: -12px;padding-top:1%; background-color:#97dffd;border-radius: 0px 5px 5px 0px;box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);}
 	#label:after{position:relative;content: "";top:-50%;left:-41%;border-top:0 solid transparent;border-right-width: 0.8em;border-right-color: inherit;border-right-style: solid;border-bottom: 1em solid transparent;border-left: 0 solid transparent;z-index: -1;}
 	#labela{color: #f9f7f7;font-weight:bolder;}
 	#bottom{height: 20px;width: 11%;background-color:#97dffd;margin-top:5%; margin-left:45%; border-radius: 5px 5px 5px 5px;}
