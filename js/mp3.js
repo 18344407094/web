@@ -1,3 +1,26 @@
+// 图片旋转
+ window.onload = function(){  
+          var musicimg = document.getElementById('musicimg');
+              musicimg.style.webkitAnimationPlayState = "paused";  //旋转动画暂停    
+              var mp3 = document.getElementById('mp3');
+            var flag = 0; //开启音乐  
+            playBtn.onclick = function(){  
+              if( flag==1 ){  
+               mp3.pause();  /*音乐关闭*/  
+                flag = 0;
+                   play.src="./picture/play.jpg"   
+                    musicimg.style.webkitAnimationPlayState = "paused";  //旋转动画暂停  
+                  }else{  
+                    mp3.play();   /*音乐开启*/  
+                    flag = 1;
+                    play.src="./picture/puase.jpg"
+
+                    musicimg.style.webkitAnimationPlayState = "running";  //旋转动画暂停  
+                  }  
+                }     
+              }
+
+// 进度条
  (function(window, document){
             // 获取要操作的元素
             var mp3 = document.getElementById("mp3");
@@ -7,7 +30,6 @@
             var progressWrap = document.getElementById("progressWrap");
             var playProgress = document.getElementById("playProgress");
             var progressFlag;
-
             // 创建我们的操作对象，我们的所有操作都在这个对象上。
             var mp3Player = {
                 init: function(){
@@ -59,12 +81,10 @@
                         mp3.currentTime = 0;
                         } 
                     mp3.play();
-                    play.src="./picture/play.jpg" 
                     progressFlag = setInterval(getProgress, 60);
                 } 
                 else{ 
                     mp3.pause(); 
-                    play.src="./picture/puase.jpg"
                     clearInterval(progressFlag);
                 } 
             }
@@ -76,7 +96,7 @@
             // 鼠标在播放条上点击时进行捕获并进行处理
             function mp3Seek(e){
                 if(mp3.paused || mp3.ended){
-                    play();
+                    mp3.play();
                     enhancemp3Seek(e);
                 }
                 else{

@@ -72,10 +72,11 @@
 	#bottom{height: 20px;width: 11%;background-color:#97dffd;margin-top:5%; margin-left:45%; border-radius: 5px 5px 5px 5px;}
 	#more{color: #f9f7f7;font-size:13px;font-weight:700;}
 	#text2{padding-bottom:2%;margin-top:150px;  height:auto;width:88%;text-align:center;background-color:#f9f7f7;border-radius: 5px 5px 5px 5px;}
-	#text2img{margin-top: 50px;height: auto;width:80%;}
+	#text2img{margin-top: 50px;height: auto;max-height:513px;  width:80%;}
 	#text2p{margin-top: 2%;text-align: left;width: 96%;margin-left: 2.5%;}
 	#text3{padding-bottom: 20px; margin-top:150px;height: auto;width:88%;text-align:center;background-color:#f9f7f7;border-radius: 5px 5px 5px 5px;}
-	#movie{height: auto;width: auto;margin-top: 2%;}
+	#movie{height: auto;width: auto;margin-top: 5%;}
+	/*#my-video{height: auto;width: auto;margin-top: 2%;}*/
 	#movie1{height: 30%;width: 95%;}
 	#moviep{margin-top: 2%;text-align: left;width: 99%;margin-left: 2.5%;}
 	#readmore{height: 20px;width: 88%;max-width:712px; margin-top: 50px; background-color:#97dffd;  text-align: center;border-radius: 5px ;}
@@ -136,9 +137,7 @@
 		}  
 	}  
 	#play{height: 30px;width: 30px;margin-left: 13%; display: block;}
-	#mp3{
-		margin-top: 0px;
-	}
+	#mp3Container{width: 100%;}
 	#mp3Controls{
 		width: 70%;
 		margin-left:90px;margin-top: -10px;

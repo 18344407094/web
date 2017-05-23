@@ -7,6 +7,10 @@
   <link rel="stylesheet" type="text/css" href="./css/index.css">
   <link rel="stylesheet" href="./css/typing.css">
   <script src="./js/typing.js"></script>
+    <link href="http://vjs.zencdn.net/5.8.8/video-js.css" rel="stylesheet">
+
+  <!-- If you'd like to support IE8 -->
+  <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 </head>
 
 <body>
@@ -128,9 +132,15 @@
     <a href="#" id="labela">电影资讯</a>
   </div>
   <div id="movie">
-    <video src="https://dplayer.b0.upaiyun.com/%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97.mp4" controls="controls" id="movie1" preload="preload">
-      你的浏览器不支持video标签
-    </video>
+    <video id="my-video" class="video-js" controls preload="auto" width="auto" height="400"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+    <source src="https://dplayer.b0.upaiyun.com/%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97.mp4" type='video/mp4'>
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
+  <script src="http://vjs.zencdn.net/5.8.8/video.js"></script>
   </div>
   <div id="moviep">
     <p>
@@ -179,35 +189,18 @@
       </div>
     </div>
   </div>
-  <div id="music">
+ <!--  <div id="music">
     <div>
       <img src="./picture/mp3.jpg" id="musicimg">
     </div>
     <div id="playBtn">
       <img src="./picture/play.jpg" id="play">
     </div>
-    <div >
+    <div>
       <audio id="mp3" preload="preload"  loop="loop" preload="preload" src="http://cc.stream.qqmusic.qq.com/C100001biOrm3GswU2.m4a?fromtag=52">
         你的浏览器不支持audio标签
       </audio> 
       <script type="text/javascript">
-        window.onload = function(){  
-          var musicimg = document.getElementById('musicimg');
-              musicimg.style.webkitAnimationPlayState = "paused";  //旋转动画暂停    
-              var mp3 = document.getElementById('mp3');
-            var flag = 0; //开启音乐  
-            playBtn.onclick = function(){  
-              if( flag==1 ){  
-                mp3.pause();  /*音乐关闭*/  
-                flag = 0;  
-                    musicimg.style.webkitAnimationPlayState = "paused";  //旋转动画暂停  
-                  }else{  
-                    mp3.play();   /*音乐开启*/  
-                    flag = 1; 
-                    musicimg.style.webkitAnimationPlayState = "running";  //旋转动画暂停  
-                  }  
-                }     
-              }    
             </script>
             <div  id="mp3Container">
               <div id="mp3Controls"> 
@@ -219,7 +212,7 @@
             </div>
             <script type="text/javascript" src="./js/mp3.js"></script> 
           </div>
-        </div>
+        </div> -->
         <div id="sub" onClick="subup()" ;> 
           <div id="sub1">
             <script type="text/javascript">
