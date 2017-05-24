@@ -57,7 +57,7 @@
 	#wcolor{text-decoration:none;color: #f9f7f7;}
 	#span{text-align: center;color: #f9f7f7;font-weight: bolder;font-size: 65px;}
 	#h2{padding-top:5%;}
-	#main{height: auto;min-height: 2800px; width: 100%}
+	#main{height: auto;min-height: 3000px; width: 100%}
 	#text{float: left;height:auto;width: 60%;margin-left:10%;}
 	#text1{padding-bottom:2%; height:auto;width:88%;text-align:center;background-color:#f9f7f7;border-radius: 5px 5px 5px 5px;}
 	#text1img{margin-top: 50px;height: auto;width:80%;}
@@ -80,7 +80,7 @@
 	#movie1{height: 30%;width: 95%;}
 	#moviep{margin-top: 2%;text-align: left;width: 99%;margin-left: 2.5%;}
 	#readmore{height: 20px;width: 88%;max-width:712px; margin-top: 50px; background-color:#97dffd;  text-align: center;border-radius: 5px ;}
-	#readmore:hover{background-color:blue;}
+	#readmore:hover{background-color:#97D7FD;}
 	#readmorea{color: #f9f7f7;}
 	#right{height: 1500px;width:26%; float: left; margin-left:-5%}
 	#right1{height: 25%;width:100%;background-color:#f9f7f7;margin: 0 auto;border-radius: 5px;}
